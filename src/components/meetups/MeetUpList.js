@@ -1,11 +1,11 @@
 import cssclass from "./MeetUpList.module.css";
-import MeetUpitem from "./MeetUpItem";
+import MeetUpItem from "./MeetUpItem";
 
 function MeetUpList(props) {
   return (
     <ul className={cssclass.list}>
       {props.eachMeetUpItem.map((eachMeetUp) => (
-        <MeetUpitem
+        <MeetUpItem
           key={eachMeetUp.id}
           id={eachMeetUp.id}
           image={eachMeetUp.image}

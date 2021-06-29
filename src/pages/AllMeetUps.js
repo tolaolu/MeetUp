@@ -8,7 +8,7 @@ function AllMeetUpsPage() {
   const [loadedMeetUps, setLoadedMeetUps] = useState([]);
   //above is  using useState to collect an array of our data from DB.
 
-  // we could make this func async and to await fethc() inside it but
+  // we could make this func async and to await fetch() inside it but
   // once u use async, it converts the function to one that returns a promise.
   //and that means such a function is no longer a React JSX/component again.
   // cos every React Funcs must be synchronous and never return a promise.
